@@ -69,10 +69,13 @@
             </div>
           <nav>
             <ul>
+				<li><a href="{{Route('detallesh')}}">Desayuno Para Ellos</a></li>   
+				<li><a href="{{Route('detallesm')}}">Desayuno Para Ellas</a></li>   
+				<li><a href="{{Route('flores')}}">Arreglos Florales</a></li>   
+				<li><a href="{{Route('dulces')}}">Detalles con dulces</a></li>   
                 <li><a href="{{Route('about')}}">Nosotros</a></li>       
-                <li><a href="{{Route('work')}}">Galería</a></li>   
                 <li><a href="{{Route('contact')}}">Contáctanos</a></li>     
-                <li><a href="https://www.instagram.com/makemyday__hn/?igshid=MTk0NTkyODZkYg%3D%3D">Instagram</a></li>        
+                   
             </ul>   
           </nav>
         </div>

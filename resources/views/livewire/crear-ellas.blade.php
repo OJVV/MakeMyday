@@ -1,5 +1,5 @@
 <div>
-    <form method="POST" wire:submit.prevent='editarPost'  novalidate>
+    <form method="POST" wire:submit.prevent='crearElla'  novalidate>
         @csrf
 
         <div>
@@ -18,28 +18,22 @@
         </div>
 
         <div>
-            <x-label for="imagen" value="{{ __('Imagen') }}" />
+            <x-label for="titulo" value="{{ __('Imagen') }}" />
             <x-input 
             id="imagen" 
             class="block mt-1 w-full" 
             type="file" 
-           wire:model='imagen_nueva'
+           wire:model='imagen'
            accept="image/*"
             />
 
             <div class="my-5 w-80">
-                <x-label value="{{ __('Imagen-Actual') }}" />
-
-                <img src="{{asset('storage/work/' . $imagen)}}" alt="{{ 'Imagen Work ' . $titulo }}">
-            </div>
-
-         <div class="my-5 w-80">
-                @if ($imagen_nueva)
-                    Imagen nueva: 
-                    <img src="{{$imagen_nueva->temporaryUrl()}}" alt="" class="">
+                @if ($imagen)
+                    Imagen: 
+                    <img src="{{$imagen->temporaryUrl()}}" alt="" class="">
                 @endif
-            </div> 
-            @error('imagen_nueva')
+            </div>
+            @error('imagen')
             <livewire:mostrar-alerta :message="$message"/>
           @enderror
 
@@ -47,7 +41,7 @@
         </div>
 
         <x-button class="mt-2 bg-green-800">
-            {{ __('Guardar Cambios') }}
+            {{ __('Subir') }}
         </x-button>
 
 

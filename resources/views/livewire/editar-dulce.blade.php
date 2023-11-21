@@ -1,5 +1,5 @@
 <div>
-    <form method="POST" wire:submit.prevent='editarPost'  novalidate>
+    <form method="POST" wire:submit.prevent='editarDulce'  novalidate>
         @csrf
 
         <div>
@@ -30,7 +30,7 @@
             <div class="my-5 w-80">
                 <x-label value="{{ __('Imagen-Actual') }}" />
 
-                <img src="{{asset('storage/work/' . $imagen)}}" alt="{{ 'Imagen Work ' . $titulo }}">
+                <img src="{{asset('storage/dulce/' . $imagen)}}" alt="{{ 'Imagen dulce ' . $titulo }}">
             </div>
 
          <div class="my-5 w-80">

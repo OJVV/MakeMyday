@@ -13,15 +13,51 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('work.index') }}" :active="request()->routeIs('work.index')">
-                        {{ __('Work') }}
+                        {{ __('Ellos') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link href="{{ route('work.create') }}" :active="request()->routeIs('work.create')">
-                        {{ __('New Post') }}
+                        {{ __('New Post Ellos') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('ellas.index') }}" :active="request()->routeIs('ellas.index')">
+                        {{ __('Ellas') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('ellas.create') }}" :active="request()->routeIs('ellas.create')">
+                        {{ __('New Post Ellas') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('arreglo.index') }}" :active="request()->routeIs('arreglo.index')">
+                        {{ __('Arreglos') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('arreglo.create') }}" :active="request()->routeIs('arreglo.create')">
+                        {{ __('New Post Arreglo') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('dulce.index') }}" :active="request()->routeIs('dulce.index')">
+                        {{ __(' Arreglos con Dulces') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('dulce.create') }}" :active="request()->routeIs('dulce.create')">
+                        {{ __('New Post Dulces') }}
+                    </x-nav-link>
+                </div>
+               
+
+               
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ms-6">
@@ -146,10 +182,28 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link href="{{ route('work.index') }}" :active="request()->routeIs('work.index')">
-                {{ __('Work') }}
+                {{ __('Ellos') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('work.create') }}" :active="request()->routeIs('work.create')">
-                {{ __('New Post') }}
+                {{ __('New Post Ellos') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('ellas.index') }}" :active="request()->routeIs('ellas.index')">
+                {{ __('Ellas') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('ellas.create') }}" :active="request()->routeIs('ellas.create')">
+                {{ __('New Post Ellas') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('arreglo.index') }}" :active="request()->routeIs('arreglo.index')">
+                {{ __('Arreglos') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('arreglo.create') }}" :active="request()->routeIs('arreglo.create')">
+                {{ __('New Post Arreglos') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('dulce.index') }}" :active="request()->routeIs('dulce.index')">
+                {{ __('Dulces') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('dulce.create') }}" :active="request()->routeIs('dulce.create')">
+                {{ __('New Post Dulce') }}
             </x-responsive-nav-link>
 
 
